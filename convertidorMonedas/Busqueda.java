@@ -15,7 +15,7 @@ public class Busqueda {
     public void setValor(String mon1, String mon2) throws IOException, InterruptedException {
         HttpClient client =HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://v6.exchangerate-api.com/v6/29e62006cd8e9c4ef46a090f/latest/"+mon1))
+                .uri(URI.create("https://v6.exchangerate-api.com/v6/***AdddyourAPI*****/latest/"+mon1))
                 .build();
         HttpResponse<String> response =client.send(request, HttpResponse.BodyHandlers.ofString());
 
