@@ -16,3 +16,14 @@ Al ejecutar Principal, el usuario obtendrá un menú de opciones, con un adecuad
 El usuario debe elegir la opción y proporcionar la cantidad a convertir. 
 
 Como respuesta obtiene la equivalencia entre las monedas y la conversión de la cantidad elegida.
+
+![Ejemplo](ConvMON.png)
+
+# Funcionamiento
+
+## Clase Busqueda
+Tiene como elemento de tipo public double la propiedad "valor" .
+Con setValor se hacen los request necesarios a la API, para ello se le pasam los atributos mon1 y mon2, o moneda1 y moneda 2.
+La consulta que se hace es mon1, y con JsonParser se obtiene el equivalente en mon2.
+
+
